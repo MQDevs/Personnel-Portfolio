@@ -573,8 +573,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Select the download button element
     const downloadButton = document.getElementById('download-cv');
     
-    // Replace 'resume Mudassir.pdf' with the actual filename of your PDF CV
-    const pdfFilePath = 'css/resume Mudassir.pdf';
+    // Replace 'CV.pdf' with the actual filename of your PDF CV
+    const pdfFilePath = 'css/ Mudassir.pdf';
     
     // Function to handle the download action
     function downloadCV() {
@@ -582,7 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const anchor = document.createElement('a');
         anchor.style.display = 'none';
         anchor.href = pdfFilePath;
-        anchor.download = 'resume Mudassir.pdf'; // Specify the filename for download
+        anchor.download = 'CV.pdf'; // Specify the filename for download
         document.body.appendChild(anchor);
         anchor.click();
         document.body.removeChild(anchor);
